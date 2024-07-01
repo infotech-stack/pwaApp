@@ -1,0 +1,8 @@
+﻿@page "/welcome"
+@inject IUserService UserService
+@using pwaApp.Services
+<h2>Welcome</h2>
+<p>You are successfully logged in as:</p>
+<p>@UserService.Username</p>
+
+<a href="/" class="btn btn-primary">Logout</a>
